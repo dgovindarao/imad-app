@@ -24,7 +24,7 @@ app.use(morgan('combined'));
   articleThree:{title:'Article-three',
       heading:'Article-three',
       date:'15  sep 2017',
-      content:`<p>this is mu third article
+      content:`<p>this is my third article
         </p>`},
   };
  
