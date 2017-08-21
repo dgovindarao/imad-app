@@ -4,7 +4,14 @@ var path = require('path');
 
 var app = express();
 app.use(morgan('combined'));
- 
+  
+  
+  var articleOne={
+      title:'Article-one',
+      heading:'Article-one',
+      date:'5  sep 2017',
+      content:``
+  };
  
     
 app.get('/', function (req, res) {
