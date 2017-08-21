@@ -17,11 +17,11 @@ app.get('/Article-one',function(req,res)
 
 app.get('/Article-two',function(req,res)
 {
-   res.send('article two serverd will be requested here'); 
+   res.sendFile(path.join(__dirname, 'ui', 'Article-one.html'));
 });
 app.get('/Article-three',function(req,res)
 {
-   res.send('article three serverd will be requested here') ;
+  res.sendFile(path.join(__dirname, 'ui', 'Article-one.html'));
 });
 
 app.get('/ui/style.css', function (req, res) {
