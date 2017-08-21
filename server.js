@@ -17,22 +17,7 @@ app.use(morgan('combined'));
         </p>`
       
    };
-  // 'Article-Two' :{
-      title:'Article-two',
-      date:'10 sep 2017',
-      heading:'Article-two',
-      content:`
-      
-        <p> this is my second article
-        </p>`},
-   //'Article-Three':{
-      title:'Article-three',
-      date:'15 sep 2017',
-      heading:'Article-three',
-      content:`
-      <p>this is my third article
-        </p>`}
- //};
+  
       function createTemplate (data){
           var title= data.title;
           var date =data.date;
@@ -77,7 +62,7 @@ app.get('/', function (req, res) {
 });
 
 
-app.get('/articleOne ',function(req,res)
+app.get('/Article-one ',function(req,res)
 {
     //articleName=Article-one
     //articles[articleName]==[]contnet object for article one
