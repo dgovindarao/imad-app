@@ -10,7 +10,7 @@ app.use(morgan('combined'));
       title: 'Article-one',
       heading: 'Article-one',
       date:'sep 5,2017',
-      content: ' <p> this is my first article-one </p> '
+      content: ` <p> this is my first article-one </p> `
      
       };
       function createTemplate (data){
@@ -19,7 +19,7 @@ app.use(morgan('combined'));
           var heading =data.heading;
           var content=data.content;
      
-       var htmlTemplate= <html>
+       var htmlTemplate= `<html>
     <head>
         <title>
             ${titel}
@@ -44,6 +44,7 @@ app.use(morgan('combined'));
         </div>
     </body>
 </html>
+`;
        return htmlTemplate;
         
 }
@@ -54,7 +55,7 @@ app.get('/', function (req, res) {
 
 app.get('/Article-one',function(req,res)
 {
-   res.sendFile(path.join(__dirname, 'ui', 'Article-one.html'));
+   res.send(createTemplate(articleOne));
 });
 
 app.get('/Article-three',function(req,res)
