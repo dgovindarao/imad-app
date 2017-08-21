@@ -22,15 +22,13 @@ app.use(morgan('combined'));
       heading:'Article-two',
       content:`
       
-        <p>
+        <p> this is my second article
         </p>`},
-  var articleThree={title:'Article-one',
-      date:'5 sep 2017',
-      heading:'Article-one',
+  var articleThree={title:'Article-three',
+      date:'15 sep 2017',
+      heading:'Article-three',
       content:`
-      <p>this is the content for the first articlethis is the content for the first articlethis is the content for the first articlethis is the content for the first article
-        </p>
-        <p>this is the content for the first article.this is the content for the first article.this is the content for the first article.this is the content for the first article.this is the content for the first article.this is the content for the first article.
+      <p>this is my third article
         </p>`}
  };
       function createTemplate (data){
