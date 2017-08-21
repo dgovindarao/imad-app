@@ -10,7 +10,10 @@ app.use(morgan('combined'));
       title:'Article-one',
       heading:'Article-one',
       date:'5  sep 2017',
-      content:``
+      content:`<p>this is the content for the first articlethis is the content for the first articlethis is the content for the first articlethis is the content for the first article
+        </p>
+        <p>this is the content for the first article.this is the content for the first article.this is the content for the first article.this is the content for the first article.this is the content for the first article.this is the content for the first article.
+        </p>`
   };
  
     
