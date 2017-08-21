@@ -64,10 +64,7 @@ app.get('/', function (req, res) {
 
 app.get('/Article-one ',function(req,res)
 {
-    //articleName=Article-one
-    //articles[articleName]==[]contnet object for article one
-   // var articleName=req.params.articleName;
-   res.send(createTemplate(articleOne);
+   res.send(createTemplate(articleOne));
 });
 
 //app.get('/Article-three',function(req,res)
