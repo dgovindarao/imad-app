@@ -28,6 +28,7 @@ app.use(morgan('combined'));
         <link href="/ui/style.css" rel="stylesheet" />
     </head>
     <body>
+        <div class="container">
         <div>
             <a href="/">home</a>
         </div>
@@ -42,6 +43,7 @@ app.use(morgan('combined'));
         <hr>
         <div>
        ${content}
+        </div>
         </div>
     </body>
 </html>
