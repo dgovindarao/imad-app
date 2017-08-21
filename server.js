@@ -13,41 +13,40 @@ app.use(morgan('combined'));
       content: ' <p> this is my first article-one </p> '
      
       };
-      
-       var htmlTemplate = \ <html>
-               <head>
-                 <title>
-                  ${heading}
-                 </title>
-              <meta name="viewport" content="width=device-width, initial-scale=1"/>
-              <link href="/ui/style.css" rel="stylesheet" />
+      function createTemplate (data){
+          var title= data.title;
+          var date =data.date;
+          var heading =data.heading;
+          var content=data.content;
+     
+       var htmlTemplate= <html>
+    <head>
+        <title>
+            ${titel}
+            </title>
+        <meta name="viewpoint" content="width=device-width, initial-scale=1"/>
+    </head>
+    <body>
+        <div>
+            <a href="/">home</a>
+        </div>
+        <hr>
+        <h3>
+            ${heading}
+        </h3>
+        <hr>
+        <div>
+            ${date}
+        </div>
+        <hr>
+        <div>
+       ${content}
+        </div>
+    </body>
+</html>
+       return htmlTemplate;
         
-                </head>
-          <body>
-             <div class="container">
-               <div>
-                   <a href="/">home</a>
-               </div>
-             <hr>
-               <h3>
-                 ${heading}
-               </h3>
-             <hr>
-                <div>
-                  ${date}
-                </div>
-              <hr>
-               <div>
-             $ {content}
-                </div>
-             </div>
-         </body>
-    </html> 
-\ ;
-         
-
-
-
+}
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
