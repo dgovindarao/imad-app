@@ -34,12 +34,12 @@ var request =new XMLHttpRequest();
       list +='<li>'+names[i]+'</li>';  
     }
     var ul = document.getElementById('namelist');
-    ul.innerHTML = list;n
+    ul.innerHTML = list;
         }
     }
     };
     var nameInput = document.getElementById('name');
-     var name = nameInput.value;
+  var name = nameInput.value;
     request.open('GET','http://dgovindarao.imad.hasura-app.io/submit-name?name='+name,true);
     request.send(null);
    
