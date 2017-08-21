@@ -22,7 +22,7 @@ app.use(morgan('combined'));
        var htmlTemplate= `<html>
     <head>
         <title>
-            ${titel}
+            ${title}
             </title>
         <meta name="viewpoint" content="width=device-width, initial-scale=1"/>
     </head>
