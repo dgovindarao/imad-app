@@ -77,7 +77,7 @@ app.get('/', function (req, res) {
 });
 
 
-app.get('/:articleName ',function(req,res)
+app.get('/articleOne ',function(req,res)
 {
     //articleName=Article-one
     //articles[articleName]==[]contnet object for article one
