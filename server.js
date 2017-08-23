@@ -153,8 +153,7 @@ app.get('/:articleName',function(req,res)
         });
 });
 
-        }
-        }
+        
     } )
    res.send(createTemplate(articledata));
 });
