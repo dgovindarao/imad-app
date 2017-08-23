@@ -1,7 +1,7 @@
 var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
-var Pool = require('pg').Pool;
+var pool = require('pg').Pool;
 
 
 
@@ -101,7 +101,7 @@ app.get('/test-db',function ( req,res)
        }
        else
        {
-       res.send(JSON.strigify(result.rows));
+       res.send(JSON.strigify(result));
        }
     });
 });
