@@ -115,8 +115,7 @@ app.get('/:articleName',function(req,res)
 
 
  
- //app.get('/articles/:articleName',function(req,res)
-//{
+ app.get('/articles/:articleName',function(req,res){
     //var articleName=req.params.articleName;
     pool.query("SELECT * FROM article1 WHERE title = ' " + req.params.articleName + " ' ",function ( err,result){
         if(err){
