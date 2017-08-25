@@ -63,7 +63,7 @@ app.use(morgan('combined'));
             </h3>
         <hr>
         <div>
-            ${date.toDateString()}
+            ${date}
         </div>
         <hr>
         <div>
