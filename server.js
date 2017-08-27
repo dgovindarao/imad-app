@@ -127,8 +127,8 @@ app.get('/test-db',function(req,res){
 
  
 
-app.get('/:articleName',function(req,res)
-{
+//app.get('/:articleName',function(req,res)
+//{
     var articleName=req.params.articleName;
    res.send(createTemplate(articles[articleName]));
 });
@@ -139,7 +139,8 @@ app.get('/:articleName',function(req,res)
 
  
  app.get('/articles/:articleName',function(req,res){
-    //var articleName=req.params.articleName;
+    var articleName=req.params.articleName;
+     
     pool.query("SELECT * FROM article1 WHERE title = ' " + req.params.articleName + " ' ",function ( err,result){
         if(err){
             res.status(500).send(err.toString());
