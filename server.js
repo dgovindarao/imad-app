@@ -160,6 +160,7 @@ app.get('/test-db',function(req,res){
         });
 });
 
+
         
    
    //res.send(createTemplate(articledata));
@@ -170,12 +171,13 @@ app.get('/test-db',function(req,res){
 
 //app.get('/Article-three',function(req,res)
 //{
-  // res.sendFile(path.join(__dirname, 'ui', 'Article-three.html'));
-//});
+  res.sendFile(path.join(__dirname, 'ui', 'Article-three.html'));
+});
+
 //app.get('/Article-two',function(req,res)
 //{
- // res.sendFile(path.join(__dirname, 'ui', 'Article-two.html'));
-//});
+ res.sendFile(path.join(__dirname, 'ui', 'Article-two.html'));
+});
 
 
 app.get('/ui/style.css', function (req, res) {
