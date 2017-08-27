@@ -131,7 +131,7 @@ app.get('/test-db',function(req,res){
 //{
     var articleName=req.params.articleName;
    res.send(createTemplate(articles[articleName]));
-});
+});//
 
 
 
@@ -172,7 +172,7 @@ app.get('/test-db',function(req,res){
 //app.get('/Article-three',function(req,res)
 //{
   res.sendFile(path.join(__dirname, 'ui', 'Article-three.html'));
-});
+});//
 
 //app.get('/Article-two',function(req,res)
 //{
