@@ -1,7 +1,7 @@
 var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
-
+var Pool = require('pg').Pool;
 
 
 
@@ -12,6 +12,15 @@ var path = require('path');
 
 var app = express();
 app.use(morgan('combined'));
+
+
+var config = {
+   user     :
+   database :
+   host     :
+   port     :
+   
+};
   
   
   var articles={
@@ -84,7 +93,11 @@ app.get('/', function (req, res) {
 });
 
 
-
+app.get('/test-db',function(req,res){
+    //make a select request
+    //return a responsewith the reuslts
+    
+});
  
  var counter=0;
  app.get('/counter',function(req,res) {
