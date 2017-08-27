@@ -73,7 +73,7 @@ var config = {
             </h3>
         <hr>
         <div>
-            ${date}
+            ${date.toDateString()}
         </div>
         <hr>
         <div>
