@@ -1,7 +1,7 @@
 //console.log('Loaded!');
-var button =  document.getElementById('counter');
-button.onclick = function()
-{
+//var button =  document.getElementById('counter');
+//button.onclick = function()
+//{
     var request =new XMLHttpRequest();
     request.onreadystatechange = function(){
     if( request.readyState  === XMLHttpRequest.DONE)
@@ -17,7 +17,7 @@ button.onclick = function()
     request.open('GET','http://dgovindarao.imad.hasura-app.io/counter',true);
     request.send(null);
    
-};
+//};
 
 
 var submit = document.getElementById('submit_btn');
@@ -46,8 +46,31 @@ submit.onclick =  function ()
      var  name = nameInput.value;
     request.open('GET','http://dgovindarao.imad.hasura-app.io/submit-name?name='+name,true);
     request.send(null);
-    };
-
+   };
+   
+   
+ //var submit = document.getElementById('submit_btn');
+//submit.onclick =  function ()
+//{
+    var request =new XMLHttpRequest();
+    request.onreadystatechange = function()
+    {
+    if( request.readyState  === XMLHttpRequest.DONE)
+    {
+        if(request.status === 200 )
+        {
+          alert('logged in successfully'); 
+        }
+       }
+    }
+    var nameInput = document.getElementById('name');
+     var  name = nameInput.value;
+    request.open('GET','http://dgovindarao.imad.hasura-app.io/submit-name?name='+name,true);
+    request.send(null);
+  //  };
+   
+   
+   
 
 //submit name
 //var nameInput = document.getElementById('name');
